@@ -442,7 +442,6 @@
   // 우클릭 방지
   document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
-    alert("우클릭은 사용할 수 없습니다.");
   });
 
   // 개발자도구 단축키 방지
@@ -450,42 +449,36 @@
     // F12
     if (e.key === "F12") {
       e.preventDefault();
-      alert("개발자도구 사용이 제한되어 있습니다.");
       return false;
     }
 
     // Ctrl + Shift + I
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") {
       e.preventDefault();
-      alert("개발자도구 사용이 제한되어 있습니다.");
       return false;
     }
 
     // Ctrl + Shift + J
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") {
       e.preventDefault();
-      alert("개발자도구 사용이 제한되어 있습니다.");
       return false;
     }
 
     // Ctrl + Shift + C
     if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c") {
       e.preventDefault();
-      alert("개발자도구 사용이 제한되어 있습니다.");
       return false;
     }
 
     // Ctrl + U 소스보기 방지
     if (e.ctrlKey && e.key.toLowerCase() === "u") {
       e.preventDefault();
-      alert("소스보기가 제한되어 있습니다.");
       return false;
     }
 
     // Ctrl + S 저장 방지
     if (e.ctrlKey && e.key.toLowerCase() === "s") {
       e.preventDefault();
-      alert("페이지 저장이 제한되어 있습니다.");
       return false;
     }
   });
